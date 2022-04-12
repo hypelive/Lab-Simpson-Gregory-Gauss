@@ -69,6 +69,7 @@ void SimpsonResults()
     std::cout << "Simpson h/4 results:\nSum: " << SimpsonApproximations[2] << "\nRem: " << SimpsonApproximationRemains[2] << "\nRungeRem:" << SimpsonRungeRemains[2] << "\nRungeSum:" << SimpsonRungeApproximations[2] << std::endl << std::endl;
 }
 
+// Euler-Maclaurin: http://neo-chaos.narod.ru/useful/nummethod/kalitkin_04_085-125.pdf
 double GregorySum(double h, int m, std::vector<double>& functionValues)
 {
     double sum = 0.0;
